@@ -32,8 +32,8 @@
 
     <style>
         :root {
-            --evac-color: #FF5722; /* Оранжевый для эвакуатора */
-            --manip-color: #00E5FF; /* Голубой неон для манипулятора */
+            --evac-color: #FF5722;
+            --manip-color: #00E5FF;
             --dark-bg: #111827;
             --card-bg: #1F2937;
         }
@@ -52,7 +52,6 @@
             border: 1px solid rgba(255,255,255,0.1);
             transition: all 0.3s ease;
         }
-        /* При наведении подсвечиваем в зависимости от типа */
         .tech-card[data-type="evac"]:hover { border-color: var(--evac-color); box-shadow: 0 10px 30px -10px rgba(255, 87, 34, 0.3); transform: translateY(-5px); }
         .tech-card[data-type="manip"]:hover { border-color: var(--manip-color); box-shadow: 0 10px 30px -10px rgba(0, 229, 255, 0.3); transform: translateY(-5px); }
 
@@ -72,12 +71,13 @@
 </head>
 <body class="pb-20 md:pb-0">
 
-    <header class="fixed w-full z-50 bg-[#111827]/90 backdrop-blur-md border-b border-white/10">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="font-tech text-2xl font-black tracking-wider">
+    <header class="fixed w-full z-50 bg-[#111827]/95 backdrop-blur-md border-b border-white/10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="font-tech text-xl md:text-2xl font-black tracking-wider shrink-0">
                 KAZ<span class="text-white">SPEC</span>
-                <div class="text-[9px] text-gray-400 leading-none -mt-1">ПРОФЕССИОНАЛЬНАЯ СПЕЦТЕХНИКА</div>
+                <div class="text-[9px] text-gray-400 leading-none -mt-1">СПЕЦТЕХНИКА</div>
             </div>
+            
             <div class="hidden md:flex items-center gap-6">
                  <a href="#evac-section" class="flex items-center gap-2 hover:text-[var(--evac-color)] transition">
                     <i class="fas fa-truck-pickup text-[var(--evac-color)]"></i> Эвакуатор
@@ -86,7 +86,8 @@
                     <i class="fas fa-truck-loading text-[var(--manip-color)]"></i> Манипулятор
                 </a>
             </div>
-            <a href="tel:+77474640078" onclick="return gtag_report_conversion(this.href);" class="font-tech font-bold text-xl md:text-2xl hover:text-gray-300 transition">
+
+            <a href="tel:+77474640078" onclick="return gtag_report_conversion(this.href);" class="whitespace-nowrap font-tech font-bold text-lg md:text-2xl hover:text-gray-300 transition shrink-0">
                 +7 747 464 0078
             </a>
         </div>
@@ -131,7 +132,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                
                 <div class="tech-card" data-type="evac" data-aos="fade-up" data-aos-delay="0">
                     <div class="h-56 overflow-hidden relative">
                         <img src="images/evac-1.jpg" class="w-full h-full object-cover transition duration-500 hover:scale-110" alt="Эвакуатор 1">
@@ -146,7 +146,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="tech-card" data-type="evac" data-aos="fade-up" data-aos-delay="100">
                     <div class="h-56 overflow-hidden relative">
                         <img src="images/evac-2.jpg" class="w-full h-full object-cover transition duration-500 hover:scale-110" alt="Эвакуатор 2">
@@ -160,7 +159,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="tech-card" data-type="evac" data-aos="fade-up" data-aos-delay="200">
                     <div class="h-56 overflow-hidden relative">
                         <img src="images/evac-3.jpg" class="w-full h-full object-cover transition duration-500 hover:scale-110" alt="Эвакуатор 3">
@@ -175,7 +173,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="tech-card" data-type="evac" data-aos="fade-up" data-aos-delay="300">
                     <div class="h-56 overflow-hidden relative">
                         <img src="images/evac-4.jpg" class="w-full h-full object-cover transition duration-500 hover:scale-110" alt="Эвакуатор 4">
@@ -189,7 +186,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             
              <div class="mt-10 text-center">
@@ -201,7 +197,7 @@
     </section>
 
     <section id="manip-section" class="py-20 relative bg-[#161e2e]">
-         <div class="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-cyan-900/20 via-transparent to-transparent pointer-events-none"></div>
+        <div class="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-cyan-900/20 via-transparent to-transparent pointer-events-none"></div>
 
         <div class="container mx-auto px-4 relative z-10">
              <div class="flex items-center justify-end gap-4 mb-12">
@@ -212,7 +208,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                
                 <div class="tech-card" data-type="manip" data-aos="fade-up" data-aos-delay="0">
                     <div class="h-56 overflow-hidden relative">
                         <img src="images/manip-1.jpg" class="w-full h-full object-cover transition duration-500 hover:scale-110" alt="Манипулятор 3т">
@@ -227,7 +222,6 @@
                         </div>
                     </div>
                 </div>
-
                  <div class="tech-card" data-type="manip" data-aos="fade-up" data-aos-delay="100">
                     <div class="h-56 overflow-hidden relative">
                         <img src="images/manip-2.jpg" class="w-full h-full object-cover transition duration-500 hover:scale-110" alt="Манипулятор 5т">
@@ -242,7 +236,6 @@
                         </div>
                     </div>
                 </div>
-
                  <div class="tech-card" data-type="manip" data-aos="fade-up" data-aos-delay="200">
                     <div class="h-56 overflow-hidden relative">
                         <img src="images/manip-3.jpg" class="w-full h-full object-cover transition duration-500 hover:scale-110" alt="Манипулятор 7т">
@@ -257,7 +250,6 @@
                         </div>
                     </div>
                 </div>
-
                  <div class="tech-card" data-type="manip" data-aos="fade-up" data-aos-delay="300">
                     <div class="h-56 overflow-hidden relative">
                         <img src="images/manip-4.jpg" class="w-full h-full object-cover transition duration-500 hover:scale-110" alt="Негабарит">
@@ -272,7 +264,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div class="mt-10 text-center">
@@ -282,7 +273,6 @@
             </div>
         </div>
     </section>
-
 
     <footer class="bg-[#0d1117] py-10 text-center border-t border-white/10 mb-16 md:mb-0 relative z-10">
         <div class="font-tech text-2xl font-black tracking-wider mb-4">KAZ<span class="text-white">SPEC</span></div>
