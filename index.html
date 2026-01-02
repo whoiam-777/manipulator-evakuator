@@ -34,21 +34,19 @@
         :root {
             --evac-color: #FF5722;
             --manip-color: #00E5FF;
-            --light-bg: #ffffff; /* Белый фон */
-            --section-bg: #F9FAFB; /* Очень светло-серый для секций */
-            --card-bg: #ffffff; /* Белые карточки */
-            --text-main: #111827; /* Темный текст */
-            --text-muted: #6B7280; /* Серый текст */
-            --border-color: #E5E7EB; /* Светлые границы */
+            --light-bg: #ffffff;
+            --section-bg: #F9FAFB;
+            --card-bg: #ffffff;
+            --text-main: #111827;
+            --text-muted: #6B7280;
+            --border-color: #E5E7EB;
         }
         body { font-family: 'Roboto', sans-serif; background-color: var(--light-bg); color: var(--text-main); }
         h1, h2, h3, .font-tech { font-family: 'Montserrat', sans-serif; text-transform: uppercase; }
 
-        /* Градиентные тексты */
         .text-grad-evac { background: linear-gradient(to right, #FF5722, #FF8A65); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .text-grad-manip { background: linear-gradient(to right, #00E5FF, #2979FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-        /* Карточки техники (Светлая тема) */
         .tech-card {
             background: var(--card-bg);
             border-radius: 16px;
@@ -57,12 +55,11 @@
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
             transition: all 0.3s ease;
         }
-        /* Цветная подсветка при наведении */
         .tech-card[data-type="evac"]:hover { border-color: var(--evac-color); box-shadow: 0 20px 25px -5px rgba(255, 87, 34, 0.15), 0 10px 10px -5px rgba(255, 87, 34, 0.1); transform: translateY(-5px); }
         .tech-card[data-type="manip"]:hover { border-color: var(--manip-color); box-shadow: 0 20px 25px -5px rgba(0, 229, 255, 0.15), 0 10px 10px -5px rgba(0, 229, 255, 0.1); transform: translateY(-5px); }
 
         .specs-box {
-            background: #F3F4F6; /* Светло-серый фон для характеристик */
+            background: #F3F4F6;
             border-top: 1px solid var(--border-color);
         }
         .spec-item { display: flex; items-center; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border-color); font-size: 0.9rem; }
@@ -70,7 +67,6 @@
         .spec-label { color: var(--text-muted); display: flex; items-center; gap: 8px; }
         .spec-value { font-weight: bold; color: var(--text-main); }
 
-        /* Кнопки */
         .btn-evac { background: linear-gradient(to right, #FF5722, #F44336); color: white; }
         .btn-manip { background: linear-gradient(to right, #00E5FF, #00B0FF); color: white; font-weight: bold; text-shadow: 0 1px 2px rgba(0,0,0,0.1);}
     </style>
